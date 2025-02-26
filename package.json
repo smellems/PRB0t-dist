@@ -1,0 +1,14 @@
+{
+  "name": "prb0t-dist",
+  "version": "1.0.0",
+  "main": "http.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "octokit": "^4.1.2"
+  }
+}
