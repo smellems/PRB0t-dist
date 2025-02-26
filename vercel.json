@@ -1,15 +1,16 @@
 {
-  "builds": [
+  "headers": [
     {
-      "src": "http.js",
-      "use": "@vercel/node"
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "http.js",
-      "headers": { "Access-Control-Allow-Origin": "*" }
+      "source": "/(.*)",
+      "destination": "/api"
     }
   ]
 }
