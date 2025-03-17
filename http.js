@@ -7914,7 +7914,7 @@ ${strAuthors}` : "";
       },
       fork: {
         owner: state.currentUser,
-        repo: state.currentUser
+        repo: branchFromRepo
       }
     };
   };
